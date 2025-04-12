@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MarketSurvey/static/css/main.f97f8fba.css",
-    "main.js": "/MarketSurvey/static/js/main.8a6043ec.js",
+    "main.css": "/MarketSurvey/static/css/main.a15e1ecf.css",
+    "main.js": "/MarketSurvey/static/js/main.46b30502.js",
     "static/js/453.47b168d8.chunk.js": "/MarketSurvey/static/js/453.47b168d8.chunk.js",
     "index.html": "/MarketSurvey/index.html",
-    "main.f97f8fba.css.map": "/MarketSurvey/static/css/main.f97f8fba.css.map",
-    "main.8a6043ec.js.map": "/MarketSurvey/static/js/main.8a6043ec.js.map",
+    "main.a15e1ecf.css.map": "/MarketSurvey/static/css/main.a15e1ecf.css.map",
+    "main.46b30502.js.map": "/MarketSurvey/static/js/main.46b30502.js.map",
     "453.47b168d8.chunk.js.map": "/MarketSurvey/static/js/453.47b168d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f97f8fba.css",
-    "static/js/main.8a6043ec.js"
+    "static/css/main.a15e1ecf.css",
+    "static/js/main.46b30502.js"
   ]
 }
