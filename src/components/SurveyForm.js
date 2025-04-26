@@ -17,12 +17,9 @@ const SurveyForm = () => {
   });
 
   const ageOptions = [
-    { value: "18-24", label: "18-24 years" },
-    { value: "25-34", label: "25-34 years" },
-    { value: "35-44", label: "35-44 years" },
-    { value: "45-54", label: "45-54 years" },
-    { value: "55-64", label: "55-64 years" },
-    { value: "65+", label: "65+ years" }
+    { value: "25-35", label: "25-35 years" },
+    { value: "36-45", label: "36-45 years" },
+    { value: "46+", label: "46+ years" }
   ];
 
   const educationOptions = [
