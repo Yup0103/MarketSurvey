@@ -9,10 +9,11 @@ const SurveyForm = () => {
     name: '',
     email: '',
     mobile: '',
-    age: '',
+    ageGroup: '',
     gender: '',
     education: '',
-    phoneValidation: false
+    phoneValidation: false,
+    occupation: ''
   });
 
   const ageOptions = [
@@ -101,7 +102,7 @@ const SurveyForm = () => {
               required
               placeholder="10-digit mobile number"
             />
-            
+
             <div className="flex justify-center">
               <button
                 type="button"
@@ -118,16 +119,23 @@ const SurveyForm = () => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-800">Additional Information</h2>
 
-            <FormInput
-              id="age"
-              name="age"
-              label="Age Group"
-              type="select"
-              value={formData.age}
-              onChange={handleInputChange}
-              options={ageOptions}
-              required
-            />
+            <div className="form-group">
+              <label htmlFor="ageGroup">Age Group</label>
+              <select
+                name="ageGroup"
+                value={formData.ageGroup}
+                onChange={handleInputChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+                required
+              >
+                <option value="">Select age group</option>
+                {ageOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
 
             <FormInput
               id="gender"
@@ -142,7 +150,7 @@ const SurveyForm = () => {
               ]}
               required
             />
-
+            
             <FormInput
               id="education"
               name="education"
@@ -153,7 +161,19 @@ const SurveyForm = () => {
               options={educationOptions}
               required
             />
-
+            
+            <div className="form-group">
+              <label htmlFor="occupation">Occupation</label>
+              <input
+                type="text"
+                name="occupation"
+                value={formData.occupation}
+                onChange={handleInputChange}
+                className="form-control w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+                required
+              />
+            </div>
+            
             <div className="mt-4">
               <label className="flex items-center">
                 <input

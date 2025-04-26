@@ -15,9 +15,16 @@ const Home = () => {
       <Hero />
       
       {/* Stats Section */}
-      <div className="bg-white py-12">
+      <div className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 text-center">
+          <div className="text-center">
+            <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Our Impact</h2>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+              By the Numbers
+            </p>
+          </div>
+
+          <dl className="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 text-center">
             <div className="flex flex-col items-center">
               <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-secondary text-primary">
                 <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -62,20 +69,6 @@ const Home = () => {
       </div>
       
       <HowItWorks />
-      
-      {/* Survey Form Section */}
-      <div className="bg-secondary py-16" id="survey-form">
-        <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-gray-900">Join India's Largest Survey Panel</h2>
-            <p className="mt-4 text-lg text-gray-700">
-              Start earning gift card rewards while shaping the future of products and services in India.
-            </p>
-          </div>
-          
-          <SurveyForm />
-        </div>
-      </div>
       
       {/* Testimonials */}
       <div className="bg-white py-16">
