@@ -62,7 +62,7 @@ const SurveyForm = () => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 max-w-md mx-auto w-full">
       <div className="px-4 py-5 sm:p-6">
         {currentStep < 3 && <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />}
         
