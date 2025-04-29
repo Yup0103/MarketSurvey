@@ -3,7 +3,8 @@ import SurveyForm from './SurveyForm';
 
 const Hero = () => {
   return (
-    <div className="bg-secondary">
+    <div className="relative bg-secondary">
+      {/* Content */}
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 lg:pr-12">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
